@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - master
-      - feature*
   pull_request:
       types: [opened, synchronize, reopened]
 name: Main Workflow
@@ -14,7 +13,6 @@ jobs:
   sonarcloud:
     runs-on: ubuntu-latest
     steps:
-    - name: Clone Repository
     - uses: actions/checkout@v2
       with:
         # Disabling shallow clone is recommended for improving relevancy of reporting
