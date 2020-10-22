@@ -12,7 +12,6 @@ on:
 name: Main Workflow
 jobs:
   sonarcloud:
-  name: SonarCloud
     runs-on: ubuntu-latest
     steps:
     - name: Clone Repository
